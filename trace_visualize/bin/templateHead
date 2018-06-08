@@ -1,0 +1,6 @@
+<script type="text/javascript" src="mktree.js"></script>
+<link rel="stylesheet" href="mktree.css" type="text/css">
+</head>
+<body>
+<button onclick="expandTree('tree1')"> expandTree</button> <button onclick="collapseTree('tree1')"> collapseTree</button><br/>
+<hr/>

@@ -1,0 +1,48 @@
+This folder contains small test cases for the offloading algorithms.
+test1-test4 test the basic four algorithms
+test1:
+main(){
+	a();
+	write 1;//small
+	b(){read 1;}
+	write 2;//large
+	c(){read 2;}
+}
+For test1, 4 scheme should return the same result.
+
+test2:
+main(){
+main(){
+	a();
+	write 1;//small
+	b(){read 1; pinned1();}
+	write 2;//large
+	c(){read 2;}
+}
+}
+
+For test2, bidirectional settings should be able to offload b().
+
+test3:
+main(){
+	a();
+	write 1;//small
+	b(){read 1;}
+	d(){write 2;//large}
+	c(){read 2;}
+}
+
+For test3, stateful settings should be able to offload c() by offloading d().
+
+test4:
+main(){
+	a();
+	write 1;//small
+	b(){read 1;}
+	d(){write 2;//large pinned();}
+	c(){read 2;}
+}
+
+FOr test4, stateful-bi settings should be offload c().
+
+test_ssa is to test the bug caused by SSA transformation + object-level dependency detection.
