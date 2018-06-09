@@ -20,7 +20,7 @@ Mercury: A Unified Framework for Exploring Offloading Tradeoffs in Mobile-Cloud 
 # print help info
 java -jar bin/mercury.jar
 
-# compute optimal partitions for all strategies using an energy model
+# compute optimal offloading solutions for all four strategies using an energy model
 java -Xmx16g  -jar bin/mercury.jar \
 -p config/nativeMethods.txt \
 -c config/coLocList.txt  \
