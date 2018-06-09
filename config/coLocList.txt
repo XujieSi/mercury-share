@@ -1,0 +1,359 @@
+#The below methds are colocated globally because of nativeClassInit(V)
+Landroid/media/FaceDetector;.fft_initialize(IIII)	0
+Landroid/media/FaceDetector;.fft_detect(IL)		0
+Landroid/media/FaceDetector;.fft_get_face(VL)		0
+Landroid/media/FaceDetector;.fft_destroy(V)		0
+Landroid/media/FaceDetector;.nativeClassInit(V)		0
+
+#Bitmap. We use a special way to coloc native methods: we colocate the reachable native methods of
+#java methods on the same this object. We need this, as Bitmap access the native bitmap not in a uniform
+#way: sometimes it is the java object passed as the return value or parameter, sometimes it is the native
+#bitmap address directly.
+#Landroid/graphics/Bitmap;.createBitmap(LLIILZ)		1	-1	1
+#Landroid/graphics/Bitmap;.createBitmap(LLLIIIIL)	1	-1	1
+Landroid/graphics/Bitmap;.nativeCreate(LLIIIIIZ)	0	-1	1
+Landroid/graphics/Bitmap;.copy(LLZ)			1	-1	1
+Landroid/graphics/Bitmap;.copy(LLZ)		1	0	1
+Landroid/graphics/Bitmap;.recycle(V)			1	0	1
+Landroid/graphics/Bitmap;.compress(ZLIL)		1	0	1
+Landroid/graphics/Bitmap;.eraseColor(VI)		1	0	1
+Landroid/graphics/Bitmap;.getWidth(I)			1	0	1
+Landroid/graphics/Bitmap;.getHeight(I)			1	0	1
+Landroid/graphics/Bitmap;.getRowBytes(I)		1	0	1
+Landroid/graphics/Bitmap;.getConfig(L)			1	0	1
+Landroid/graphics/Bitmap;.getPixel(III)		1	0	1
+Landroid/graphics/Bitmap;.getPixels(VLIIIIII)		1	0	1
+Landroid/graphics/Bitmap;.setPixel(VIII)		1	0	1
+Landroid/graphics/Bitmap;.setPixels(VLIIIIII)		1	0	1
+Landroid/graphics/Bitmap;.copyPixelsToBuffer(VL)	1	0	1
+Landroid/graphics/Bitmap;.copyPixelsFromBuffer(VL)	1	0	1
+Landroid/graphics/Bitmap;.getGenerationId(I)		1	0	1
+Landroid/graphics/Bitmap;.nativeCreateFromParcel(LL)	0	-1	1
+Landroid/graphics/Bitmap;.writeToParcel(VLI)		1	0	1
+Landroid/graphics/Bitmap;.extractAlpha(LLL)		1	0	1
+Landroid/graphics/Bitmap;.extractAlpha(LLL)		1	-1	1
+Landroid/graphics/Bitmap;.nativeExtractAlpha(LIIL)	0	-1	1
+Landroid/graphics/Bitmap;.prepareToDraw(V)		1	0	1
+Landroid/graphics/Bitmap;.hasAlpha(Z)			1	0	1
+Landroid/graphics/Bitmap;.setHasAlpha(VZ)		1	0	1
+Landroid/graphics/Bitmap;.hasMipMap(Z)			1	0	1
+Landroid/graphics/Bitmap;.setHasMipMap(VZ)		1	0	1
+Landroid/graphics/Bitmap;.sameAs(ZL)			1	0	1
+Landroid/graphics/Bitmap;.sameAs(ZL)			1	1	1
+Landroid/media/FaceDetector;.fft_detect(IL)		0	1	1
+Landroid/graphics/BitmapFactory;.decodeStream(LLLL)	1	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeStream(LLLLL)	0	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeStream(LLLLLZF)	0	-1	1
+#Landroid/graphics/BitmapFactory;.decodeFileDescriptor(LLLL)	1	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeFileDescriptor(LLLLL)	0	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeAsset(LILL)	0	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeAsset(LILLZF)	0	-1	1
+#Landroid/graphics/BitmapFactory;.decodeByteArray(LLIIL)	0	-1	1
+Landroid/graphics/BitmapFactory;.nativeDecodeByteArray(LLIIL)	0	-1	1
+
+#Bitmap continued. The only way to link the following destructor is through the native bitmap address.
+#Note this could be potentially unsound, if the java object is passed to all the other native methods rather than the native bitmap pointer.
+Landroid/graphics/Bitmap;.nativeDestructor(VI)		0	0	1
+Landroid/graphics/Bitmap;.nativeCopy(LIIZ)		0	0	1
+#Landroid/graphics/Bitmap;.nativeCopy(LIIZ)		0	-1	1
+Landroid/graphics/Bitmap;.nativeRecyle(VI)		0	0	1
+Landroid/graphics/Bitmap;.nativeCompress(ZIIILL)	0	0	1
+Landroid/graphics/Bitmap;.nativeErase(VII)		0	0	1
+Landroid/graphics/Bitmap;.nativeWidth(II)		0	0	1
+Landroid/graphics/Bitmap;.nativeHeight(II)		0	0	1
+Landroid/graphics/Bitmap;.nativeRowBytes(II)		0	0	1
+Landroid/graphics/Bitmap;.nativeConfig(II)		0	0	1
+Landroid/graphics/Bitmap;.nativeGetPixel(IIII)		0	0	1
+Landroid/graphics/Bitmap;.nativeGetPixels(VILIIIIII)	0	0	1 
+Landroid/graphics/Bitmap;.nativeSetPixel(VIIII)		0	0	1
+Landroid/graphics/Bitmap;.nativeSetPixels(VILIIIIII)	0	0	1
+Landroid/graphics/Bitmap;.nativeCopyPixelsToBuffer(VIL)	0	0	1
+Landroid/graphics/Bitmap;.nativeCopyPixelsFromBuffer(VIL)	0	0	1
+Landroid/graphics/Bitmap;.nativeGenerationId(II)	0	0	1
+Landroid/graphics/Bitmap;.nativeWriteToParcel(ZIZIL)	0	0	1
+Landroid/graphics/Bitmap;.nativeExtractAlpha(LIIL)	0	0	1
+Landroid/graphics/Bitmap;.nativePrepareToDraw(VI)	0	0	1
+Landroid/graphics/Bitmap;.nativeHasAlpha(ZI)		0	0	1
+Landroid/graphics/Bitmap;.nativeSetHasAlpha(VIZ)	0	0	1
+Landroid/graphics/Bitmap;.nativeHasMipMap(ZI)		0	0	1
+Landroid/graphics/Bitmap;.nativeSetHasMipMap(VIZ)	0	0	1
+Landroid/graphics/Bitmap;.nativeSameAs(ZII)		0	0	1
+Landroid/graphics/Bitmap;.nativeSameAs(ZII)		0	1	1
+
+#Regular expressions
+Ljava/util/regex/Matcher;.closeImpl(VJ)		0	0	2
+Ljava/util/regex/Matcher;.findImpl(ZJLIL)	0	0	2
+Ljava/util/regex/Matcher;.findNextImpl(ZJLL)	0	0	2
+Ljava/util/regex/Matcher;.groupCountImpl(IJ)	0	0	2
+Ljava/util/regex/Matcher;.hitEndImpl(ZJ)	0	0	2
+Ljava/util/regex/Matcher;.lookingAtImpl(ZJLL)	0	0	2
+Ljava/util/regex/Matcher;.matchesImpl(ZJLL)	0	0	2
+Ljava/util/regex/Matcher;.openImpl(JJ)		0	-1	2
+Ljava/util/regex/Matcher;.requireEndImpl(ZJ)	0	0	2
+Ljava/util/regex/Matcher;.setInputImpl(VJLII)	0	0	2
+Ljava/util/regex/Matcher;.useAnchoringBoundsImpl(VJZ)	0	0	2
+Ljava/util/regex/Matcher;.useTransparentBoundsImpl(VJZ)	0	0	2
+
+Ljava/util/regex/Pattern;.compileImpl(JLI)	0	-1	2
+Ljava/util/regex/Pattern;.closeImpl(VJ)		0	0	2
+Ljava/util/regex/Matcher;.openImpl(JJ)		0	0	2
+
+#NativeDecimalFormat
+Llibcore/icu/NativeDecimalFormat;.applyPatternImpl(VJZL)	0	0	2
+Llibcore/icu/NativeDecimalFormat;.cloneImpl(IJ)			0	0	2
+Llibcore/icu/NativeDecimalFormat;.close(VJ)			0	0	2
+Llibcore/icu/NativeDecimalFormat;.formatLong(LJJL)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.formatDouble(LJDL)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.formatDigitList(LJLL)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.getAttribute(IJI)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.getTextAttribute(LJI)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.parse(LJLLZ)			0	0	2
+Llibcore/icu/NativeDecimalFormat;.setSymbol(VJIL)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.setAttribute(VJII)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.setRoundingMode(VJID)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.setTextAttribute(VJIL)	0	0	2
+Llibcore/icu/NativeDecimalFormat;.toPatternImpl(LJZ)		0	0	2
+Llibcore/icu/NativeDecimalFormat;.open(JLLCCLCLLCCLCCCC)	0	-1	2
+Llibcore/icu/NativeDecimalFormat;.setDecimalFormatSymbols(VJLCCLCLLCCLCCCC)	0	0	2
+
+#There are two native pointers: parserPointer and attributerPointer
+#Below are the methods related with parserPointer
+Lorg/apache/harmony/xml/ExpatParser;.appendString(VJLZ)		0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.appendBytes(VJLII)		0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.appendChars(VJLII)		0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.column(IJ)			0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.createEntityParser(JJL)	0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.createEntityParser(JJL) 	0	-1	2
+Lorg/apache/harmony/xml/ExpatParser;.initialize(JLZ)		0	-1	2
+Lorg/apache/harmony/xml/ExpatParser;.line(IJ)			0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.release(VJ)		0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.releaseParser(VJ)		0	0	2
+#To be fully sound, we need to colocate all the methods with the static initializer.
+#However after inspecting the source file, it is really just setting up the jni environment.
+#Lorg/apache/harmony/xml/ExpatParser;.staticInitialize(VL)	0
+Lorg/apache/harmony/xml/ExpatAttributes;.getLocalName(LJJI)	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getQName(LJJI) 	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getURI(LJJI) 		0	0	2
+
+Lorg/apache/harmony/xml/ExpatParser;.cloneAttributes(JJI)	0	0	2
+Lorg/apache/harmony/xml/ExpatParser;.cloneAttributes(JJI)	0	-1	2
+Lorg/apache/harmony/xml/ExpatAttributes;.freeAttributes(VJ)	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getIndexForQName(IJL)	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getIndex(IJLL) 	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getLocalName(LJJI)	0	2	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getQName(LJJI) 	0	2	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getURI(LJJI) 		0	2	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getValueByIndex(LJI) 	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getValueForQName(LJL) 	0	0	2
+Lorg/apache/harmony/xml/ExpatAttributes;.getValue(LJLL)		0	0	2
+
+#BigInt
+#To be fully sound, we actually need to co-locate all methods with these two error
+#code reading method. We choose to be unsound here as it does not hurt the core
+#function of the library.
+Ljava/math/NativeBN;.ERR_get_error(IV)				0	-1	1
+Ljava/math/NativeBN;.ERR_error_string(LI)			0	0	1
+
+Ljava/math/NativeBN;.BN_new(I)					0	-1	1
+Ljava/math/NativeBN;.BN_free(VI)				0	0	1
+Ljava/math/NativeBN;.BN_cmp(III)				0	0	1
+Ljava/math/NativeBN;.BN_cmp(III)				0	1	1
+Ljava/math/NativeBN;.BN_copy(ZII)				0	0	1
+Ljava/math/NativeBN;.BN_copy(ZII)				0	1	1
+Ljava/math/NativeBN;.putLongInt(ZIJ)				0	0	1
+Ljava/math/NativeBN;.putULongInt(ZIJZ)				0	0	1
+Ljava/math/NativeBN;.BN_dec2bn(IIL)				0	0	1
+Ljava/math/NativeBN;.BN_hex2bn(IIL)				0	0	1
+Ljava/math/NativeBN;.BN_bin2bn(ZLIZI)				0	3	1
+Ljava/math/NativeBN;.litEndInts2bn(ZLIZI)			0	3	1
+Ljava/math/NativeBN;.twosComp2bn(ZLII)				0	2	1
+Ljava/math/NativeBN;.longInt(JI)				0	0	1
+Ljava/math/NativeBN;.BN_bn2dec(LI)				0	0	1
+Ljava/math/NativeBN;.BN_bn2hex(LI)				0	0	1
+Ljava/math/NativeBN;.BN_bn2bin(LI)				0	0	1
+Ljava/math/NativeBN;.bn2litEndInts(LI)				0	0	1
+Ljava/math/NativeBN;.sign(II)				        0	0	1
+Ljava/math/NativeBN;.BN_set_negative(VII)			0	0	1
+Ljava/math/NativeBN;.bitLength(II)				0	0	1
+Ljava/math/NativeBN;.BN_is_bit_set(ZII)				0	0	1
+Ljava/math/NativeBN;.modifyBit(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_shift(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_shift(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_add_word(ZII)				0	0	1
+Ljava/math/NativeBN;.BN_sub_word(ZII)				0	0	1
+Ljava/math/NativeBN;.BN_mul_word(ZII)				0	0	1
+Ljava/math/NativeBN;.BN_div_word(III)				0	0	1
+Ljava/math/NativeBN;.BN_mod_word(III)				0	0	1
+Ljava/math/NativeBN;.BN_add(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_add(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_add(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_sub(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_sub(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_sub(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_gcd(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_gcd(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_gcd(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_mul(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_mul(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_mul(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_exp(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_exp(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_exp(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_div(ZIIII)				0	0	1
+Ljava/math/NativeBN;.BN_div(ZIIII)				0	1	1
+Ljava/math/NativeBN;.BN_div(ZIIII)				0	2	1
+Ljava/math/NativeBN;.BN_nnmod(ZIII)				0	0	1
+Ljava/math/NativeBN;.BN_nnmod(ZIII)				0	1	1
+Ljava/math/NativeBN;.BN_nnmod(ZIII)				0	2	1
+Ljava/math/NativeBN;.BN_mod_exp(ZIIII)				0	0	1
+Ljava/math/NativeBN;.BN_mod_exp(ZIIII)				0	1	1
+Ljava/math/NativeBN;.BN_mod_exp(ZIIII)				0	2	1
+Ljava/math/NativeBN;.BN_mod_inverse(ZIII)			0	0	1
+Ljava/math/NativeBN;.BN_mod_inverse(ZIII)			0	1	1
+Ljava/math/NativeBN;.BN_mod_inverse(ZIII)			0	2	1
+Ljava/math/NativeBN;.BN_generate_prime_ex(ZIIZIII)		0	0	1
+Ljava/math/NativeBN;.BN_generate_prime_ex(ZIIZIII)		0	3	1
+Ljava/math/NativeBN;.BN_generate_prime_ex(ZIIZIII)		0	4	1
+Ljava/math/NativeBN;.BN_is_prime_ex(ZIII)			0	0	1
+Ljava/math/NativeBN;.BN_is_prime_ex(ZIII)			0	2	1
+
+Landroid/os/MessageQueue;.nativeInit(I)		0	-1	1
+Landroid/os/MessageQueue;.nativeDestroy(VI)	0	0	1
+Landroid/os/MessageQueue;.nativePollOnce(VII)	0	0	1
+Landroid/os/MessageQueue;.nativeWake(VI)	0	0	1
+
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestFinal(IJLI)		0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestUpdate(VJLII)		0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestInit(JJ)			0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyFinal(IJLIIJ)		0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_PKEY_type(IJ)			0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.d2i_PUBKEY(JL)			0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.OBJ_txt2nid_longName(LL)		0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.RAND_seed(VL)			0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyInit(JL)			0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyUpdate(VJLII)		0
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_MD_CTX_destroy(VJ)		0
+
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_processRaw(IJLLJZZ)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setLmFile(VJLLL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.new_Decoder__SWIG_1(JJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_endUtt(VJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_hyp(JJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_getVadState(ZJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_startUtt(VJLL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Hypothesis_hypstr_get(LJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_defaultConfig(J)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setJsgfFile(VJLLL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_getSearch(LJL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setKws(VJLLL)	0
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setSearch(VJLL)	0
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_setString(VJLLL)	0
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_setFloat(VJLLD)	0
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_getFloat(DJLL)	0
+
+Landroid/graphics/Matrix;.<init>(V)	1	0	1
+Landroid/graphics/Matrix;.<init>(VL)	1	0	1
+Landroid/graphics/Matrix;.<init>(VL)	1	1	1
+Landroid/graphics/Matrix;.isIdentity(V)	1	0	1
+Landroid/graphics/Matrix;.rectStaysRect(V)	1	0	1
+Landroid/graphics/Matrix;.set(VL)	1	0	1
+Landroid/graphics/Matrix;.set(VL)	1	1	1
+Landroid/graphics/Matrix;.equals(VL)	1	0	1
+Landroid/graphics/Matrix;.equals(VL)	1	1	1
+Landroid/graphics/Matrix;.reset(V)	1	0	1
+Landroid/graphics/Matrix;.setTranslate(VFF)	1	0	1
+Landroid/graphics/Matrix;.setScale(VFFFF)	1	0	1
+Landroid/graphics/Matrix;.setScale(VFF)		1	0	1
+Landroid/graphics/Matrix;.setRotate(VFFF)	1	0	1
+Landroid/graphics/Matrix;.setRotate(VF)		1	0	1
+Landroid/graphics/Matrix;.setSinCos(VFFFF)		1	0	1
+Landroid/graphics/Matrix;.setSinCos(VFF)		1	0	1
+Landroid/graphics/Matrix;.setSkew(VFFFF)		1	0	1
+Landroid/graphics/Matrix;.setSkew(VFF)		1	0	1
+Landroid/graphics/Matrix;.setConcat(ZLL)		1	0	1
+Landroid/graphics/Matrix;.setConcat(ZLL)		1	1	1
+Landroid/graphics/Matrix;.setConcat(ZLL)		1	2	1
+Landroid/graphics/Matrix;.preTranslate(ZFF)		1	0	1
+Landroid/graphics/Matrix;.preScale(ZFFFF)	1	0	1
+Landroid/graphics/Matrix;.preScale(ZFF)		1	0	1
+Landroid/graphics/Matrix;.preRotate(ZFFF)	1	0	1
+Landroid/graphics/Matrix;.preRotate(ZF)		1	0	1
+Landroid/graphics/Matrix;.preSkew(ZFFFF)	1	0	1
+Landroid/graphics/Matrix;.preSkew(ZFF)		1	0	1
+Landroid/graphics/Matrix;.preConcat(ZL)		1	0	1
+Landroid/graphics/Matrix;.preConcat(ZL)		1	1	1
+Landroid/graphics/Matrix;.postTranslate(ZFF)	1	0	1
+Landroid/graphics/Matrix;.postScale(ZFFFF)	1	0	1
+Landroid/graphics/Matrix;.postScale(ZFF)	1	0	1
+Landroid/graphics/Matrix;.postRotate(ZFFF)	1	0	1
+Landroid/graphics/Matrix;.postRotate(ZF)	1	0	1
+Landroid/graphics/Matrix;.postSkew(ZFFFF)	1	0	1
+Landroid/graphics/Matrix;.postSkew(ZFF)		1	0	1
+Landroid/graphics/Matrix;.postConcat(ZL)	1	0	1
+Landroid/graphics/Matrix;.postConcat(ZL)	1	1	1
+Landroid/graphics/Matrix;.setRectToRect(ZLLL)	1	0	1
+Landroid/graphics/Matrix;.setPolyToPoly(ZLILII)	1	0	1
+Landroid/graphics/Matrix;.invert(ZL)		1	0	1
+Landroid/graphics/Matrix;.invert(ZL)		1	1	1
+Landroid/graphics/Matrix;.mapPoints(VLILII)	1	0	1
+Landroid/graphics/Matrix;.mapVectors(VLILII)	1	0	1
+Landroid/graphics/Matrix;.mapRect(ZLL)		1	0	1
+Landroid/graphics/Matrix;.mapRadius(FF)		1	0	1
+Landroid/graphics/Matrix;.getValues(VL)		1	0	1
+Landroid/graphics/Matrix;.setValues(VL)		1	0	1
+Landroid/graphics/Matrix;.equals(ZL)		1	0	1
+Landroid/graphics/Matrix;.finalize(V)		1	0	1
+
+Landroid/graphics/Matrix;.native_equals(ZII)	0	0	1
+Landroid/graphics/Matrix;.native_equals(ZII)	0	1	1
+
+#java.util.zip.Inflater
+Ljava/util/zip/Inflater;.inflateImpl(ILIIJ)		0	3 	2	
+Ljava/util/zip/Inflater;.setInputImpl(VLIIJ)		0	3	2	
+Ljava/util/zip/Inflater;.resetImpl(VJ)			0	0	2	
+Ljava/util/zip/Inflater;.setFileInputImpl(ILJIJ)	0	4	2					
+Ljava/util/zip/Inflater;.getTotalInImpl(JJ)		0	0	2	
+Ljava/util/zip/Inflater;.getTotalOutImpl(JJ)		0	0	2	
+Ljava/util/zip/Inflater;.createStream(JZ)		0	-1	2	
+Ljava/util/zip/Inflater;.endImpl(VJ)			0	0	2	
+Ljava/util/zip/Inflater;.getAdlerImpl(IJ)		0	0	2	
+Ljava/util/zip/Inflater;.setDictionaryImpl(VLIIJ)	0 	3	2		
+
+#libcore.icu.NativeConverter
+Llibcore/icu/NativeConverter;.decode(IJLILILZ)			0	0	2
+Llibcore/icu/NativeConverter;.encode(IJLILILZ)			0	0	2
+Llibcore/icu/NativeConverter;.openConverter(JL)			0	-1	2
+Llibcore/icu/NativeConverter;.closeConverter(VJ)		0	0	2
+Llibcore/icu/NativeConverter;.resetByteToChar(VJ)		0	0	2
+Llibcore/icu/NativeConverter;.resetCharToByte(VJ)		0	0	2
+Llibcore/icu/NativeConverter;.getSubstitutionBytes(LJ)		0	0	2
+Llibcore/icu/NativeConverter;.getMaxBytesPerChar(IJ)		0	0	2
+Llibcore/icu/NativeConverter;.getMinBytesPerChar(IJ)		0	0	2
+Llibcore/icu/NativeConverter;.getAveBytesPerChar(FJ)		0	0	2
+Llibcore/icu/NativeConverter;.getAveCharsPerByte(FJ)		0	0	2
+Llibcore/icu/NativeConverter;.canEncode(ZJI)			0	0	2
+Llibcore/icu/NativeConverter;.setCallbackDecode(VJIIL)			0	0	2
+Llibcore/icu/NativeConverter;.setCallbackEncode(VJIIL)			0	0	2
+
+#libcore.icu.NativeCollator
+#Llibcore/icu/NativeCollation;.closeCollator(VI)				0	0	1
+#Llibcore/icu/NativeCollation;.compare(IILL)				0	0	1
+#Llibcore/icu/NativeCollation;.getAttribute(III)				0	0	1
+#Llibcore/icu/NativeCollation;.getCollationElementIterator(IIL)		0	0	1
+#Llibcore/icu/NativeCollation;.getRules(LI)				0	0	1
+#Llibcore/icu/NativeCollation;.getSortKey(LIL)				0	0	1
+#Llibcore/icu/NativeCollation;.openCollator(IL)				0	-1	1
+#Llibcore/icu/NativeCollation;.openCollatorFromRules(ILII)		0	-1	1
+#Llibcore/icu/NativeCollation;.safeClone(II)				0	0	1
+#Llibcore/icu/NativeCollation;.safeClone(II)				0	-1	1
+#Llibcore/icu/NativeCollation;.setAttribute(VIII)			0	0	1
+#Llibcore/icu/NativeCollation;.closeElements(VI)				0	0	1
+#Llibcore/icu/NativeCollation;.getMaxExpansion(III)			0	0	1
+#Llibcore/icu/NativeCollation;.getOffset(II)				0	0	1
+#Llibcore/icu/NativeCollation;.next(II)					0	0	1
+#Llibcore/icu/NativeCollation;.next(II)					0	-1	1
+#Llibcore/icu/NativeCollation;.previous(II)				0	0	1
+#Llibcore/icu/NativeCollation;.previous(II)				0	-1	1
+#Llibcore/icu/NativeCollation;.reset(VI)					0	0	1
+#Llibcore/icu/NativeCollation;.setOffset(VII)				0	0	1
+#Llibcore/icu/NativeCollation;.setText(VIL)				0	0	1

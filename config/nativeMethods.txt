@@ -1,0 +1,767 @@
+#Method list mainly for native methods. 0: stateless. 1: stateful. 2:pinned. 3: unpin whole subtree.
+#Note stateful methods should also be put in the co-location method list. At least every invocation of it should be co-located.
+#stateless method list from COMET paper
+Ledu/gatech/protocol/Utility;.pinGetNDoubles(LI)	22
+Ledu/gatech/protocol/Utility;.pinGetNInts(LI)	22
+Ljava/lang/Math;.acos(DD)	0
+Ljava/lang/Math;.asin(DD)	0
+Ljava/lang/Math;.atan(DD)	0
+Ljava/lang/Math;.atan2(DDD)	0
+Ljava/lang/Math;.cbrt(DD)	0
+Ljava/lang/Math;.ceil(DD)	0
+Ljava/lang/Math;.cos(DD)	0
+Ljava/lang/Math;.cosh(DD)	0
+Ljava/lang/Math;.exp(DD)	0
+Ljava/lang/Math;.expm1(DD)	0
+Ljava/lang/Math;.floor(DD)	0
+Ljava/lang/Math;.hypot(DDD)	0
+Ljava/lang/Math;.IEEEremainder(DDD)	0
+Ljava/lang/Math;.log(DD)	0
+Ljava/lang/Math;.log10(DD)	0
+Ljava/lang/Math;.log1p(DD)	0
+Ljava/lang/Math;.pow(DDD)	0
+Ljava/lang/Math;.rint(DD)	0
+Ljava/lang/Math;.sin(DD)	0
+Ljava/lang/Math;.sinh(DD)	0
+Ljava/lang/Math;.sqrt(DD)	0
+Ljava/lang/Math;.tan(DD)	0
+Ljava/lang/Math;.tanh(DD)	0
+Ljava/lang/Math;.nextafter(DDD)	0
+Ljava/lang/Math;.nextafterf(FFF)	0
+Ljava/lang/Float;.floatToIntBits(IF)	0
+Ljava/lang/Double;.doubleToLongBits(JD)	0
+Ljava/lang/Character;.digitImpl(III)	0
+Ljava/lang/Character;.getTypeImpl(II)	0
+Ljava/lang/Character;.isDefinedImpl(ZI)	0
+Ljava/lang/Character;.isDigitImpl(ZI)	0
+Ljava/lang/Character;.isIdentifierIgnorableImpl(ZI)	0
+Ljava/lang/Character;.isLetterImpl(ZI)	0
+Ljava/lang/Character;.isLetterOrDigitImpl(ZI)	0
+Ljava/lang/Character;.isLowerCaseImpl(ZI)	0
+Ljava/lang/Character;.isMirroredImpl(ZI)	0
+Ljava/lang/Character;.isSpaceCharImpl(ZI)	0
+Ljava/lang/Character;.isTitleCaseImpl(ZI)	0
+Ljava/lang/Character;.isUnicodeIdentifierPartImpl(ZI)	0
+Ljava/lang/Character;.isUnicodeIdentifierStartImpl(ZI)	0
+Ljava/lang/Character;.isUpperCaseImpl(ZI)	0
+Ljava/lang/Character;.isWhitespaceImpl(ZI)	0
+Ljava/lang/Character;.ofImpl(II)	0
+Ljava/lang/Character;.toLowerCaseImpl(II)	0
+Ljava/lang/Character;.toTitleCaseImpl(II)	0
+Ljava/lang/Character;.toUpperCaseImpl(II)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableBreakIteratorLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableCalendarLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableCollatorLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableDateFormatLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getAvailableNumberFormatLocalesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getCurrencyCodeNative(LL)	0
+Lcom/ibm/icu4jni/util/ICU;.getCurrencySymbolNative(LLL)	0
+Lcom/ibm/icu4jni/util/ICU;.getDisplayCountryNative(LLL)	0
+Lcom/ibm/icu4jni/util/ICU;.getDisplayLanguageNative(LLL)	0
+Lcom/ibm/icu4jni/util/ICU;.getDisplayVariantNative(LLL)	0
+Lcom/ibm/icu4jni/util/ICU;.getISO3CountryNative(LL)	0
+Lcom/ibm/icu4jni/util/ICU;.getISO3LanguageNative(LL)	0
+Lcom/ibm/icu4jni/util/ICU;.getISOCountriesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.getISOLanguagesNative(L)	0
+Lcom/ibm/icu4jni/util/ICU;.initLocaleDataImpl(ZLL)	0
+Lcom/ibm/icu4jni/util/ICU;.toLowerCase(LLL)	0
+Lcom/ibm/icu4jni/util/ICU;.toUpperCase(LLL)	0
+Ljava/lang/Object;.internalClone(LL)	0
+Ljava/lang/Object;.hashCode(I)	0
+Ljava/lang/Object;.getClass(L)	0
+Ljava/lang/Object;.notify(V)	0
+Ljava/lang/Object;.notifyAll(V)	0
+Ljava/lang/Object;.wait(VJI)	0
+Ljava/lang/Class;.getComponentType(L)	0
+Ljava/lang/Class;.getSignatureAnnotation(L)	0
+Ljava/lang/Class;.getDeclaredClasses(LLZ)	0
+Ljava/lang/Class;.getDeclaredConstructors(LLZ)	0
+Ljava/lang/Class;.getDeclaredFields(LLZ)	0
+Ljava/lang/Class;.getDeclaredField(LLL)	0
+Ljava/lang/Class;.getDeclaredMethods(LLZ)	0
+Ljava/lang/Class;.getInterfaces(L)	0
+Ljava/lang/Class;.getModifiers(ILZ)	0
+Ljava/lang/Class;.getNameNative(L)	0
+Ljava/lang/Class;.getSuperclass(L)	0
+Ljava/lang/Class;.isAssignableFrom(ZL)	0
+Ljava/lang/Class;.isInstance(ZL)	0
+Ljava/lang/Class;.isInterface(Z)	0
+Ljava/lang/Class;.isPrimitive(Z)	0
+Ljava/lang/Class;.newInstanceImpl(L)	0
+Ljava/lang/Class;.getDeclaringClass(L)	0
+Ljava/lang/Class;.getEnclosingClass(L)	0
+Ljava/lang/Class;.getEnclosingConstructor(L)	0
+Ljava/lang/Class;.getEnclosingMethod(L)	0
+Ljava/lang/Class;.isAnonymousClass(Z)	0
+Ljava/lang/Class;.getDeclaredAnnotations(L)	0
+Ljava/lang/Class;.getInnerClassName(L)	0
+Ljava/lang/Class;.classForName(LLZL)	0
+Ljava/lang/Class;.getClassLoader(LL)	0
+Ljava/lang/VMThread;.currentThread(L)	0
+Ljava/lang/VMThread;.getStatus(I)	0
+Ljava/lang/VMThread;.holdsLock(ZL)	0
+Ljava/lang/VMThread;.interrupt(V)	0
+Ljava/lang/VMThread;.interrupted(Z)	0
+Ljava/lang/VMThread;.isInterrupted(Z)	0
+Ljava/lang/VMThread;.sleep(VJI)	0
+Ljava/lang/VMThread;.yield(V)	0
+Ljava/lang/reflect/Method;.getMethodModifiers(ILI)	0
+Ljava/lang/reflect/Method;.invokeNative(LLLLLLIZ)	0
+Ljava/lang/reflect/Method;.getDeclaredAnnotations(LLI)	0
+Ljava/lang/Class;.getDeclaredConstructorOrMethod(LLLL)	0
+Ljava/lang/reflect/Method;.getParameterAnnotations(LLI)	0
+Ljava/lang/reflect/Method;.getDefaultValue(LLI)	0
+Ljava/lang/reflect/Method;.getSignatureAnnotation(LLI)	0
+Ljava/lang/reflect/Field;.getFieldModifiers(ILI)	0
+Ljava/lang/reflect/Field;.getField(LLLLIZ)	0
+Ljava/lang/reflect/Field;.getBField(BLLL)	0
+Ljava/lang/reflect/Field;.getCField(CLLL)	0
+Ljava/lang/reflect/Field;.getDField(DLLL)	0
+Ljava/lang/reflect/Field;.getFField(FLLL)	0
+Ljava/lang/reflect/Field;.getIField(ILLL)	0
+Ljava/lang/reflect/Field;.getJField(JLLL)	0
+Ljava/lang/reflect/Field;.getSField(SLLL)	0
+Ljava/lang/reflect/Field;.getZField(ZLLL)	0
+Ljava/lang/reflect/Field;.setField(VLLLIZL)	0
+Ljava/lang/reflect/Field;.setBField(VLLLIZB)	0
+Ljava/lang/reflect/Field;.setCField(VLLLIZC)	0
+Ljava/lang/reflect/Field;.setDField(VLLLIZD)	0
+Ljava/lang/reflect/Field;.setFField(VLLLIZF)	0
+Ljava/lang/reflect/Field;.setIField(VLLLIZI)	0
+Ljava/lang/reflect/Field;.setJField(VLLLIZJ)	0
+Ljava/lang/reflect/Field;.getIField(ILLLIZC)	0
+Ljava/lang/reflect/Field;.getJField(JLLLIZC)	0
+Ljava/lang/reflect/Field;.setSField(VLLLIZS)	0
+Ljava/lang/reflect/Field;.setZField(VLLLIZZ)	0
+Ljava/lang/reflect/Field;.getDeclaredAnnotations(LLI)	0
+Ljava/lang/reflect/Field;.getSignatureAnnotation(LLI)	0
+Ljava/lang/reflect/Constructor;.constructNative(LLLLIZ)	0
+Ljava/lang/reflect/Constructor;.getConstructorModifiers(ILI)	0
+Ljava/lang/reflect/Constructor;.getDeclaredAnnotations(LLI)	0
+Ljava/lang/reflect/Constructor;.getParameterAnnotations(LLI)	0
+Ljava/lang/reflect/Constructor;.getSignatureAnnotation(LLI)	0
+Ljava/lang/reflect/Array;.createObjectArray(LLI)	0
+Ljava/lang/reflect/Array;.createMultiArray(LLL)	0
+Ljava/lang/reflect/AccessibleObject;.getClassSignatureAnnotation(LL)	0
+Lsun/misc/Unsafe;.objectFieldOffset0(JL)	0
+Lsun/misc/Unsafe;.arrayBaseOffset0(IL)	0
+Lsun/misc/Unsafe;.arrayIndexScale0(IL)	0
+Lsun/misc/Unsafe;.compareAndSwapInt(ZLJII)	0
+Lsun/misc/Unsafe;.compareAndSwapLong(ZLJJJ)	0
+Lsun/misc/Unsafe;.compareAndSwapObject(ZLJLL)	0
+Lsun/misc/Unsafe;.getIntVolatile(ILJ)	0
+Lsun/misc/Unsafe;.putIntVolatile(VLJI)	0
+Lsun/misc/Unsafe;.getLongVolatile(JLJ)	0
+Lsun/misc/Unsafe;.putLongVolatile(VLJJ)	0
+Lsun/misc/Unsafe;.getObjectVolatile(LLJ)	0
+Lsun/misc/Unsafe;.putObjectVolatile(VLJL)	0
+Lsun/misc/Unsafe;.getInt(ILJ)	0
+Lsun/misc/Unsafe;.putInt(VLJI)	0
+Lsun/misc/Unsafe;.getLong(JLJ)	0
+Lsun/misc/Unsafe;.putLong(VLJJ)	0
+Lsun/misc/Unsafe;.getObject(LLJ)	0
+Lsun/misc/Unsafe;.putObject(VLJL)	0
+Ldalvik/system/VMStack;.getCallingClassLoader(L)	0
+Ldalvik/system/VMStack;.getCallingClassLoader2(L)	0
+Ldalvik/system/VMStack;.getStackClass2(L)	0
+Ldalvik/system/VMStack;.getClasses(LIZ)	0
+Ldalvik/system/VMStack;.getThreadStackTrace(LL)	0
+Ljava/lang/IntegralToString;.convertInt(LLI)	0
+Ljava/lang/IntegralToString;.intToString(LII)	0
+Ljava/lang/IntegralToString;.longToString(LJI)	0
+Ljava/lang/IntegralToString;.convertLong(LLJ)	0
+Ljava/lang/Long;.valueOf(LJ)	0
+Ljava/lang/Integer;.valueOf(LI)	0
+Ljava/lang/Short;.valueOf(LS)	0
+Ljava/lang/Character;.valueOf(LC)	0
+Ljava/lang/Byte;.valueOf(LB)	0
+Ljava/lang/Boolean;.valueOf(LZ)	0
+Ljava/lang/String;.intern(L)	0
+Ljava/lang/System;.arraycopy(VLILII)	0
+Ljava/lang/System;.currentTimeMillis(J)	0
+Ljava/lang/System;.nanoTime(J)	0
+Ljava/lang/System;.identityHashCode(IL)	0
+Ljava/lang/Throwable;.fillInStackTrace(L)	0
+Ljava/lang/Throwable;.nativeFillInStackTrace(L)	0
+Ljava/lang/Throwable;.nativeGetStackTrace(LL)	0
+Ljava/nio/charset/Charsets;.asciiBytesToChars(VLIIL)	0
+Ljava/nio/charset/Charsets;.isoLatin1BytesToChars(VLIIL)	0
+Ljava/nio/charset/Charsets;.toAsciiBytes(LLII)	0
+Ljava/nio/charset/Charsets;.toIsoLatin1Bytes(LLII)	0
+Ljava/nio/charset/Charsets;.toUtf8Bytes(LLII)	0
+Lorg/apache/harmony/luni/util/FloatingPointParser;.parseFltImpl(FLI)	0
+Lorg/apache/harmony/luni/util/FloatingPointParser;.parseDblImpl(DLI)	0
+#
+#Below methods are methods in android/dalvik/vm/InlineNative.cpp. Because of performance consideration,
+#android make some methods native which are not native in standard JDK
+#
+Ljava/lang/Double;.doubleToRawLongBits(JD)	0
+Ljava/lang/Float;.floatToIntBits(IF)	0
+Ljava/lang/Float;.floatToRawIntBits(IF)	0
+Ljava/lang/Float;.intBitsToFloat(FI)	0
+Ljava/lang/Math;.abs(II)	0
+Ljava/lang/Math;.abs(JJ)	0
+Ljava/lang/Math;.abs(FF)	0
+Ljava/lang/Math;.abs(DD)	0
+Ljava/lang/Math;.max(III)	0
+Ljava/lang/Math;.min(III)	0
+#The String methods below access the fields of java argument objects. But they bypass the JNI bridge.
+#To handle them, their implementation is instrumented.
+Ljava/lang/String;.charAt(CI)	0
+Ljava/lang/String;.compareTo(IL)	0
+Ljava/lang/String;.equals(ZL)	0
+Ljava/lang/String;.fastIndexOf(III)	0
+Ljava/lang/String;.isEmpty(Z)	0
+Ljava/lang/String;.length(I)	0
+#Empty method
+Lorg/apache/harmony/dalvik/NativeTestTarget;.emptyInlineMethod(V)	0
+#
+#Thread-related methods
+#
+Ldalvik/system/NativeStart;.main(VL)	0
+Ldalvik/system/NativeStart;.run(V)	0
+Ljava/lang/VMThread;.create(VLJ)	0
+#
+#End
+#
+#
+#Reflection
+#
+Ljava/lang/VMClassLoader;.findLoadedClass(LLL)	0
+Ljava/lang/VMClassLoader;.loadClass(LLZ)	0
+Ljava/lang/VMClassLoader;.getPrimitiveClass(LC)	0
+Ljava/lang/VMClassLoader;.defineClass(LLLLII)	0
+Ljava/lang/VMClassLoader;.defineClass(LLLII)	0
+Ldalvik/system/DexFile;.defineClass(LLLI)	0
+Ldalvik/system/DexFile;.openDexFile(ILLI)	0
+Ljava/lang/reflect/Method;.invokeNative(LLLLLLIZ)	0
+Ljava/lang/reflect/Method;.getAnnotation(LLIL)	0
+Ljava/lang/reflect/Method;.isAnnotationPresent(ZLIL)	0
+Ljava/io/ObjectStreamClass;.hasClinit(ZL)	0
+Ljava/lang/System;.mapLibraryName(LL)	0
+Ljava/lang/VMClassLoader;.getBootClassPathSize(I)	0
+Ljava/lang/VMClassLoader;.getBootClassPathResource(LLI)	0
+Ljava/lang/Class;.getResourceAsStream(LL)	3
+Ljava/lang/Class;.desiredAssertionStatus(Z)	0
+Ljava/lang/Class;.getDeclaredAnnotation(LL)	0
+Ljava/lang/Class;.isDeclaredAnnotationPresent(ZL)	0
+Ljava/lang/reflect/Proxy;.generateProxy(LLLL)	0
+Ljava/lang/System;.setFieldImpl(VLLL)		0
+#
+#End
+#
+#
+#Methods that change the status of the virtual machine or the prcocesses.
+#These methods include the debugging methods of dalvik vm.
+#TODO: find a good arguement for the unpinned methods why they can be offloaded
+#Currently the rule used here is to unpin any methods affecting current process,
+#and to pin the methods affecting other processes
+#
+Landroid/os/Trace;.nativeSetAppTracingAllowed(VZ)	0
+Landroid/os/Process;.myPid(I)	0
+Landroid/os/Process;.myTid(I)	0
+Landroid/os/Process;.myUid(I)	0
+Landroid/os/Process;.getUidForName(IL)	2
+Landroid/os/Process;.getGidForName(IL)	2
+Landroid/os/Process;.setThreadPriority(VII)	0
+Landroid/os/Process;.setThreadScheduler(VIII)	0
+Landroid/os/Process;.setCanSelfBackground(VZ)	0
+Landroid/os/Process;.setThreadPriority(VI)	0
+Landroid/os/Process;.getThreadPriority(II)	0
+Landroid/os/Process;.setThreadGroup(VII)	0
+Landroid/os/Process;.setProcessGroup(VII)	2
+Landroid/os/Process;.getProcessGroup(II)	2
+Landroid/os/Process;.setOomAdj(ZII)	2
+Landroid/os/Process;.setArgV0(VL)	2
+Landroid/os/Process;.setUid(II)	0
+Landroid/os/Process;.setGid(II)	0
+Landroid/os/Process;.sendSignal(VII)	2
+Landroid/os/Process;.sendSignalQuiet(VII)	2
+#Landroid/os/Process;.getFreeMemory(J)	2
+#Landroid/os/Process;.getTotalMemory(J)	2
+#Landroid/os/Process;.readProcLines(VLLL)	2
+#Landroid/os/Process;.getPids(LLL)	2
+#Landroid/os/Process;.readProcFile(ZLLLLL)	2
+#Landroid/os/Process;.parseProcLine(ZLIILLLL)	2
+Landroid/os/Process;.getElapsedCpuTime(J)	0
+#Landroid/os/Process;.getPss(JI)	2
+Landroid/os/Process;.getPidsForCommands(LL)	2
+Ljava/lang/Runtime;.freeMemory(J)	0
+Ljava/lang/Runtime;.totalMemory(J)	0
+Ljava/lang/Runtime;.maxMemory(J)	0
+Ljava/lang/Runtime;.gc(V)		0
+Landroid/util/Log;.println_native(IIILL)	0
+Landroid/util/Log;.isLoggable(ZLI)	0
+Ldalvik/system/VMDebug;.getVmFeatureList(L)	0
+Lorg/apache/harmony/dalvik/ddmc/DdmVmInternal;.getRecentAllocationStatus(Z)	0
+Ldalvik/system/VMDebug;.isMethodTracingActive(Z)	0
+Landroid/os/SystemProperties;.native_get(LL)		0
+Landroid/os/SystemProperties;.native_get(LLL)		0
+Landroid/os/SystemProperties;.native_get_int(ILI)	0
+Landroid/os/SystemProperties;.native_get_long(JLJ)	0
+Landroid/os/SystemProperties;.native_get_boolean(ZLZ)	0
+Landroid/os/SystemProperties;.native_set(VLL)		0
+Llibcore/io/Posix;.getuid(I)	0
+#
+#end
+#
+#
+#Some system calls. Be very cautious about the methods put here. TODO: check the unpinned methods
+#put here
+#
+Landroid/os/SystemClock;.uptimeMillis(J)	0
+Ljava/lang/System;.loadLibrary(VL)	3
+#
+#end
+#
+#
+#Methods for ExpatParser (a xml parser). Its native methods share internal states.
+#For details, have a look at libcore/luni/src/main/java/org/apache/harmony/xml/ExpatParser.java,
+#libcore/luni/src/main/java/org_apache_harmony_xml_ExpatParser.cpp
+#
+Lorg/apache/harmony/xml/ExpatParser;.appendString(VJLZ)	1
+Lorg/apache/harmony/xml/ExpatParser;.appendBytes(VJLII)	1
+Lorg/apache/harmony/xml/ExpatParser;.appendChars(VJLII)	1
+Lorg/apache/harmony/xml/ExpatParser;.cloneAttributes(JJI)	1
+Lorg/apache/harmony/xml/ExpatParser;.column(IJ)	1
+Lorg/apache/harmony/xml/ExpatParser;.createEntityParser(JJL)	1
+Lorg/apache/harmony/xml/ExpatParser;.initialize(JLZ)	1
+Lorg/apache/harmony/xml/ExpatParser;.line(IJ)	1
+Lorg/apache/harmony/xml/ExpatParser;.release(VJ)	1
+Lorg/apache/harmony/xml/ExpatParser;.releaseParser(VJ)	1
+Lorg/apache/harmony/xml/ExpatParser;.staticInitialize(VL)	0
+Lorg/apache/harmony/xml/ExpatAttributes;.freeAttributes(VJ)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getIndexForQName(IJL)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getIndex(IJLL)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getLocalName(LJJI)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getQName(LJJI)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getURI(LJJI)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getValueByIndex(LJI)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getValueForQName(LJL)	1
+Lorg/apache/harmony/xml/ExpatAttributes;.getValue(LJLL)	1
+#
+#End
+#
+#
+#Bitmap
+#
+Landroid/graphics/Bitmap;.nativeDestructor(VI)		 	1
+Landroid/graphics/Bitmap;.nativeCopy(VI)		 	1
+Landroid/graphics/Bitmap;.nativeCopy(VI)		 	1
+Landroid/graphics/Bitmap;.nativeRecyle(VI)		 	1
+Landroid/graphics/Bitmap;.nativeCompress(ZIIILL)	 	1
+Landroid/graphics/Bitmap;.nativeErase(VII)		 	1
+Landroid/graphics/Bitmap;.nativeWidth(II)		 	1
+Landroid/graphics/Bitmap;.nativeHeight(II)		 	1
+Landroid/graphics/Bitmap;.nativeRowBytes(II)		 	1
+Landroid/graphics/Bitmap;.nativeConfig(II)		 	1
+Landroid/graphics/Bitmap;.nativeGetPixel(IIII)		 	1
+Landroid/graphics/Bitmap;.nativeGetPixels(VILIIIIII)	 	1
+Landroid/graphics/Bitmap;.nativeSetPixel(VIIII)		 	1
+Landroid/graphics/Bitmap;.nativeSetPixels(VILIIIIII)	 	1
+Landroid/graphics/Bitmap;.nativeCopyPixelsToBuffer(VIL)	 	1
+Landroid/graphics/Bitmap;.nativeCopyPixelsFromBuffer(VIL)	1
+Landroid/graphics/Bitmap;.nativeGenerationId(II)	 	1
+Landroid/graphics/Bitmap;.nativeWriteToParcel(ZIZIL)	 	1
+Landroid/graphics/Bitmap;.nativeExtractAlpha(LIIL)	 	21
+Landroid/graphics/Bitmap;.nativePrepareToDraw(VI)	 	1
+Landroid/graphics/Bitmap;.nativeHasAlpha(ZI)		 	1
+Landroid/graphics/Bitmap;.nativeSetHasAlpha(VIZ)	 	1
+Landroid/graphics/Bitmap;.nativeHasMipMap(ZI)		 	1
+Landroid/graphics/Bitmap;.nativeSetHasMipMap(VIZ)	 	1
+Landroid/graphics/Bitmap;.nativeSameAs(ZII)		 	1
+Landroid/graphics/Bitmap;.nativeSameAs(ZII)		 	1
+Landroid/graphics/BitmapFactory;.nativeDecodeStream(LLLLL)	1	
+Landroid/graphics/BitmapFactory;.nativeDecodeStream(LLLLLZF)	1	
+Landroid/graphics/BitmapFactory;.nativeDecodeFileDescriptor(LLLLL)	1	
+Landroid/graphics/BitmapFactory;.nativeDecodeAssert(LILL)	1
+Landroid/graphics/BitmapFactory;.nativeDecodeAsset(LILLZF)	1
+Landroid/graphics/BitmapFactory;.nativeDecodeByteArray(LLIIL)	1
+Landroid/graphics/Bitmap;.nativeCreate(LLIIIIIZ)		1
+Landroid/graphics/Bitmap;.nativeCreateFromParcel(LL)		1
+#
+#End
+#
+#
+#Methods related with face detection and bitmap (mainly for face detection app). To get a better understanding, have a close look at /framework/base/core/jni/android/graphics/. TODO: fix the problem of Bitmap
+#
+Landroid/media/FaceDetector;.fft_initialize(IIII)	1
+Landroid/media/FaceDetector;.fft_detect(IL)	1
+Landroid/media/FaceDetector;.fft_get_face(VL)	1
+Landroid/media/FaceDetector;.fft_destroy(V)	1
+Landroid/media/FaceDetector;.nativeClassInit(V)	1
+#
+#End
+#
+#
+#Regular expressions
+#
+Ljava/util/regex/Matcher;.closeImpl(VJ)				1
+Ljava/util/regex/Matcher;.findImpl(ZJLIL)			1
+Ljava/util/regex/Matcher;.findNextImpl(ZJLL)			1
+Ljava/util/regex/Matcher;.groupCountImpl(IJ)			1
+Ljava/util/regex/Matcher;.hitEndImpl(ZJ)			1
+Ljava/util/regex/Matcher;.lookingAtImpl(ZJLL)			1
+Ljava/util/regex/Matcher;.matchesImpl(ZJLL)			1
+Ljava/util/regex/Matcher;.openImpl(JJ)				1
+Ljava/util/regex/Matcher;.requireEndImpl(ZJ)			1
+Ljava/util/regex/Matcher;.setInputImpl(VJLII)			1
+Ljava/util/regex/Matcher;.useAnchoringBoundsImpl(VJZ)		1
+Ljava/util/regex/Matcher;.useTransparentBoundsImpl(VJZ)		1
+Ljava/util/regex/Pattern;.compileImpl(JLI)			1
+Ljava/util/regex/Pattern;.closeImpl(VJ)				1
+Ljava/util/regex/Matcher;.openImpl(JJ)				1
+#
+#End
+#
+#
+#NativeDecimalForam
+#
+Llibcore/icu/NativeDecimalFormat;.applyPatternImpl(VJZL)	1
+Llibcore/icu/NativeDecimalFormat;.cloneImpl(IJ)			1
+Llibcore/icu/NativeDecimalFormat;.close(VJ)			1
+Llibcore/icu/NativeDecimalFormat;.formatLong(LJJL)		1
+Llibcore/icu/NativeDecimalFormat;.formatDouble(LJDL)		1
+Llibcore/icu/NativeDecimalFormat;.formatDigitList(LJLL)		1
+Llibcore/icu/NativeDecimalFormat;.getAttribute(IJI)		1
+Llibcore/icu/NativeDecimalFormat;.getTextAttribute(LJI)		1
+Llibcore/icu/NativeDecimalFormat;.parse(LJLLZ)			1
+Llibcore/icu/NativeDecimalFormat;.setSymbol(VJIL)		1
+Llibcore/icu/NativeDecimalFormat;.setAttribute(VJII)		1
+Llibcore/icu/NativeDecimalFormat;.setRoundingMode(VJID)		1
+Llibcore/icu/NativeDecimalFormat;.setTextAttribute(VJIL)	1
+Llibcore/icu/NativeDecimalFormat;.toPatternImpl(LJZ)		1
+Llibcore/icu/NativeDecimalFormat;.open(JLLCCLCLLCCLCCCC)	1
+Llibcore/icu/NativeDecimalFormat;.setDecimalFormatSymbols(VJLCCLCLLCCLCCCC)	1
+#
+#End
+#
+#
+#Math BigInt
+#
+Ljava/math/NativeBN;.ERR_get_error(IV)				1
+Ljava/math/NativeBN;.ERR_error_string(LI)			1
+Ljava/math/NativeBN;.BN_new(I)					1
+Ljava/math/NativeBN;.BN_free(VI)				1
+Ljava/math/NativeBN;.BN_cmp(III)				1
+Ljava/math/NativeBN;.BN_copy(ZII)				1
+Ljava/math/NativeBN;.putLongInt(ZIJ)				1
+Ljava/math/NativeBN;.putULongInt(ZIJZ)				1
+Ljava/math/NativeBN;.BN_dec2bn(IIL)				1
+Ljava/math/NativeBN;.BN_hex2bn(IIL)				1
+Ljava/math/NativeBN;.BN_bin2bn(ZLIZI)				1
+Ljava/math/NativeBN;.litEndInts2bn(ZLIZI)			1
+Ljava/math/NativeBN;.twosComp2bn(ZLII)				1
+Ljava/math/NativeBN;.longInt(JI)				1
+Ljava/math/NativeBN;.BN_bn2dec(LI)				1
+Ljava/math/NativeBN;.BN_bn2hex(LI)				1
+Ljava/math/NativeBN;.BN_bn2bin(LI)				1
+Ljava/math/NativeBN;.bn2litEndInts(LI)				1
+Ljava/math/NativeBN;.sign(II)				        1
+Ljava/math/NativeBN;.BN_set_negative(VII)			1
+Ljava/math/NativeBN;.bitLength(II)				1
+Ljava/math/NativeBN;.BN_is_bit_set(ZII)				1
+Ljava/math/NativeBN;.modifyBit(ZIII)				1
+Ljava/math/NativeBN;.BN_shift(ZIII)				1
+Ljava/math/NativeBN;.BN_add_word(ZII)				1
+Ljava/math/NativeBN;.BN_sub_word(ZII)				1
+Ljava/math/NativeBN;.BN_mul_word(ZII)				1
+Ljava/math/NativeBN;.BN_div_word(III)				1
+Ljava/math/NativeBN;.BN_mod_word(III)				1
+Ljava/math/NativeBN;.BN_add(ZIII)				1
+Ljava/math/NativeBN;.BN_sub(ZIII)				1
+Ljava/math/NativeBN;.BN_gcd(ZIII)				1
+Ljava/math/NativeBN;.BN_mul(ZIII)				1
+Ljava/math/NativeBN;.BN_exp(ZIII)				1
+Ljava/math/NativeBN;.BN_sqr(ILLL)				1
+Ljava/math/NativeBN;.BN_div(ZIIII)				1
+Ljava/math/NativeBN;.BN_nnmod(ZIII)				1
+Ljava/math/NativeBN;.BN_mod_exp(ZIIII)				1
+Ljava/math/NativeBN;.BN_mod_inverse(ZIII)			1
+Ljava/math/NativeBN;.BN_is_prime_ex(ZIII)			1
+Ljava/math/NativeBN;.BN_generate_prime_ex(ZIIZIII)		1
+#                                                               
+#End                                                            
+#
+#
+#Below methods are in org/apache/harmony/xnet/provider/jsse/NativeCrypto.java. This class has many native methods,
+#which we add lazily here.
+#
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestFinal(IJLI)		1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestUpdate(VJLII)		1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_DigestInit(JJ)			1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyFinal(IJLIIJ)		1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_PKEY_type(IJ)			1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.d2i_PUBKEY(JL)			1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.OBJ_txt2nid_longName(LL)		1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.RAND_seed(VL)			1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyInit(JL)			1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_VerifyUpdate(VJLII)		1
+Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;.EVP_MD_CTX_destroy(VJ)		1
+#
+#End
+#
+#
+#Methods about message queues
+#
+Landroid/os/MessageQueue;.nativeInit(I)		1
+Landroid/os/MessageQueue;.nativeDestroy(VI)	1
+Landroid/os/MessageQueue;.nativePollOnce(VII)	1
+Landroid/os/MessageQueue;.nativeWake(VI)	1
+#
+#End
+#
+#
+#Methods about unsafe memory accesses.
+#
+Llibcore/io/Memory;.peekByte(BJ)		0
+Llibcore/io/Memory;.peekInt(IJZ)		0
+Llibcore/io/Memory;.peekLong(JJZ)		0
+Llibcore/io/Memory;.peekShort(SJZ)		0
+Llibcore/io/Memory;.peekByteArray(VJLII)		0
+Llibcore/io/Memory;.peekCharArray(VJLIIZ)		0
+Llibcore/io/Memory;.peekDoubleArray(VJLIIZ)		0
+Llibcore/io/Memory;.peekFloatArray(VJLIIZ)		0
+Llibcore/io/Memory;.peekIntArray(VJLIIZ)		0
+Llibcore/io/Memory;.peekLongArray(VJLIIZ)		0
+Llibcore/io/Memory;.peekShortArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeByte(VJB)		0
+Llibcore/io/Memory;.pokeInt(VJIZ)		0
+Llibcore/io/Memory;.pokeLong(VJJZ)		0
+Llibcore/io/Memory;.pokeShort(VJSZ)		0
+Llibcore/io/Memory;.pokeByteArray(VJLII)		0
+Llibcore/io/Memory;.pokeCharArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeDoubleArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeFloatArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeIntArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeLongArray(VJLIIZ)		0
+Llibcore/io/Memory;.pokeShortArray(VJLIIZ)		0
+#
+#End
+#
+#
+#AssetManager. Unsound if addAssetPathNative is called.
+#
+#Landroid/content/res/AssetManager;.list(LL)			2
+#Landroid/content/res/AssetManager;.addAssetPathNative(IL)	2
+#Landroid/content/res/AssetManager;.isUpToDate(ZV)		2
+#Landroid/content/res/AssetManager;.setLocale(VL)		2
+#Landroid/content/res/AssetManager;.getLocales(LV)		2
+#Landroid/content/res/AssetManager;.setConfiguration(VIILIIIIIIIIIIIIII)	2
+#Landroid/content/res/AssetManager;.getResourceIdentifier(ILLL)	0
+#Landroid/content/res/AssetManager;.getResourceName(LI)		0
+#Landroid/content/res/AssetManager;.getResourcePackageName(LI)	0
+#Landroid/content/res/AssetManager;.getResourceTypeName(LI)	0
+#Landroid/content/res/AssetManager;.getResourceEntryName(LI)	0
+#Landroid/content/res/AssetManager;.openAsset(ILI)		1
+#Landroid/content/res/AssetManager;.openNonAssetNative(IILI)	1
+#Landroid/content/res/AssetManager;.destroyAsset(VI)		1
+#Landroid/content/res/AssetManager;.readAssetChar(II)		1
+#Landroid/content/res/AssetManager;.readAsset(IILII)		1
+#Landroid/content/res/AssetManager;.seekAsset(JIJI)		1
+#Landroid/content/res/AssetManager;.getAssetLength(JI)		1
+#Landroid/content/res/AssetManager;.getAssetRemainingLength(JI)	1
+Landroid/content/res/AssetManager;.loadResourceValue(IISLZ)	0
+#
+#End
+#
+#
+#Methods related with voice recoginition
+#
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_processRaw(IJLLJZZ)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setLmFile(VJLLL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.new_Decoder__SWIG_1(JJL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_endUtt(VJL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_hyp(JJL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_getVadState(ZJL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_startUtt(VJLL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Hypothesis_hypstr_get(LJL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_defaultConfig(J)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setJsgfFile(VJLLL)	1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_getSearch(LJL)	 1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setKws(VJLLL)	 1
+Ledu/cmu/pocketsphinx/PocketSphinxJNI;.Decoder_setSearch(VJLL)	 1
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_setString(VJLLL)	 1
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_setFloat(VJLLD)	 1
+Ledu/cmu/pocketsphinx/SphinxBaseJNI;.Config_getFloat(DJLL)	 1
+#
+#End
+#
+#
+#Methods related with Android Matrix
+#
+Landroid/graphics/Matrix;.native_create(II)			1
+Landroid/graphics/Matrix;.native_isIdentity(ZI)			1
+Landroid/graphics/Matrix;.native_rectStaysRect(ZI)			1
+Landroid/graphics/Matrix;.native_reset(VI)			1
+Landroid/graphics/Matrix;.native_set(VII)			1
+Landroid/graphics/Matrix;.native_setTranslate(VIFF)			1
+Landroid/graphics/Matrix;.native_setScale(VIFFFF)			1
+Landroid/graphics/Matrix;.native_setScale(VIFF)			1
+Landroid/graphics/Matrix;.native_setRotate(VIFFF)			1
+Landroid/graphics/Matrix;.native_setRotate(VIF)			1
+Landroid/graphics/Matrix;.native_setSinCos(VIFFFF)			1
+Landroid/graphics/Matrix;.native_setSinCos(VIFF)			1
+Landroid/graphics/Matrix;.native_setSkew(VIFFFF)			1
+Landroid/graphics/Matrix;.native_setSkew(VIFF)			1
+Landroid/graphics/Matrix;.native_setConcat(ZIII)			1
+Landroid/graphics/Matrix;.native_preTranslate(ZIFF)			1
+Landroid/graphics/Matrix;.native_preScale(ZIFFFF)			1
+Landroid/graphics/Matrix;.native_preScale(ZIFF)			1
+Landroid/graphics/Matrix;.native_preRotate(ZIFFF)			1
+Landroid/graphics/Matrix;.native_preRotate(ZIF)			1
+Landroid/graphics/Matrix;.native_preSkew(ZIFFFF)			1
+Landroid/graphics/Matrix;.native_preSkew(ZIFF)			1
+Landroid/graphics/Matrix;.native_preConcat(ZII)			1
+Landroid/graphics/Matrix;.native_postTranslate(ZIFF)			1
+Landroid/graphics/Matrix;.native_postScale(ZIFFFF)			1
+Landroid/graphics/Matrix;.native_postScale(ZIFF)			1
+Landroid/graphics/Matrix;.native_postRotate(ZIFFF)			1
+Landroid/graphics/Matrix;.native_postRotate(ZIF)			1
+Landroid/graphics/Matrix;.native_postSkew(ZIFFFF)			1
+Landroid/graphics/Matrix;.native_postSkew(ZIFF)			1
+Landroid/graphics/Matrix;.native_postConcat(ZII)			1
+Landroid/graphics/Matrix;.native_setRectToRect(ZILLI)			1
+Landroid/graphics/Matrix;.native_setPolyToPoly(ZILILII)			1
+Landroid/graphics/Matrix;.native_invert(ZII)			1
+Landroid/graphics/Matrix;.native_mapPoints(VILILIIZ)			1
+Landroid/graphics/Matrix;.native_mapRect(ZILL)			1
+Landroid/graphics/Matrix;.native_mapRadius(FIF)			1
+Landroid/graphics/Matrix;.native_getValues(VIL)			1
+Landroid/graphics/Matrix;.native_setValues(VIL)			1
+Landroid/graphics/Matrix;.native_equals(ZII)			1
+Landroid/graphics/Matrix;.finalizer(VI)			1
+#
+#End
+#
+#
+#java/util/zip/Inflater
+#
+Ljava/util/zip/Inflater;.inflateImpl(ILIIJ)		1
+Ljava/util/zip/Inflater;.setInputImpl(VLIIJ)		1
+Ljava/util/zip/Inflater;.resetImpl(VJ)			1
+#This is unsound, as inflator read from file descriptor directly without going through JNI!
+#Ljava/util/zip/Inflater;.setFileInputImpl(ILJIJ)	1
+Ljava/util/zip/Inflater;.setFileInputImpl(ILJIJ)	2
+Ljava/util/zip/Inflater;.getTotalInImpl(JJ)		1
+Ljava/util/zip/Inflater;.getTotalOutImpl(JJ)		1
+Ljava/util/zip/Inflater;.createStream(JZ)		1
+Ljava/util/zip/Inflater;.endImpl(VJ)			1
+Ljava/util/zip/Inflater;.getAdlerImpl(IJ)		1
+Ljava/util/zip/Inflater;.setDictionaryImpl(VLIIJ) 	1
+#
+#End
+#
+#
+#java.util.zip.CRC32
+#
+Ljava/util/zip/CRC32;.updateImpl(JLIIJ)		0
+Ljava/util/zip/CRC32;.updateByteImpl(JBJ)	0
+#
+#End
+#
+#
+#Math methods from android
+#
+Landroid/util/FloatMath;.ceil(FF)	0
+Landroid/util/FloatMath;.floor(FF)	0
+Landroid/util/FloatMath;.sin(FF)	0
+#
+#End
+#
+#
+#More about java.lang.Character. The rest are at the beginning of this file from COMET.
+#
+Ljava/lang/Character;.getDirectionalityImpl(BI)	0
+#
+#End
+#
+#
+#The NativeConverter class
+#
+Llibcore/icu/NativeConverter;.decode(IJLILILZ)			1
+Llibcore/icu/NativeConverter;.encode(IJLILILZ)			1
+Llibcore/icu/NativeConverter;.openConverter(JL)			1
+Llibcore/icu/NativeConverter;.closeConverter(VJ)			1
+Llibcore/icu/NativeConverter;.resetByteToChar(VJ)			1
+Llibcore/icu/NativeConverter;.resetCharToByte(VJ)			1
+Llibcore/icu/NativeConverter;.getSubstitutionBytes(LJ)			1
+Llibcore/icu/NativeConverter;.getMaxBytesPerChar(IJ)			1
+Llibcore/icu/NativeConverter;.getMinBytesPerChar(IJ)			1
+Llibcore/icu/NativeConverter;.getAveBytesPerChar(FJ)			1
+Llibcore/icu/NativeConverter;.getAveCharsPerByte(FJ)			1
+Llibcore/icu/NativeConverter;.contains(ZLL)			0
+Llibcore/icu/NativeConverter;.canEncode(ZJI)			1
+Llibcore/icu/NativeConverter;.getAvailableCharsetNames(LV)			0
+Llibcore/icu/NativeConverter;.charsetForName(LL)			0
+Llibcore/icu/NativeConverter;.setCallbackDecode(VJIIL)			1
+Llibcore/icu/NativeConverter;.setCallbackEncode(VJIIL)			1
+#
+#End
+#
+#
+#java.lang.StringToReal
+#
+Ljava/lang/StringToReal;.parseDblImpl(DLI)	0
+Ljava/lang/StringToReal;.parseFltImpl(FLI)	0
+#
+#End
+#
+#
+#java.lang.RealToString
+#
+Ljava/lang/RealToString;.bigIntDigitGenerator(VJIZI)	0
+#
+#End
+#
+#
+#sun.misc.Unsafe
+#
+Lsun/misc/Unsafe;.objectFieldOffset0(JL)	0
+Lsun/misc/Unsafe;.arrayBaseOffset0(IL)	0
+Lsun/misc/Unsafe;.arrayIndexScale0(IL)	0
+Lsun/misc/Unsafe;.getIntVolatile(ILJ)	0
+Lsun/misc/Unsafe;.putIntVolatile(VLJI)	0
+Lsun/misc/Unsafe;.getLongVolatile(JLJ)	0
+Lsun/misc/Unsafe;.putLongVolatile(VLJJ)	0
+Lsun/misc/Unsafe;.getObjectVolatile(LLJ)	0
+Lsun/misc/Unsafe;.getInt(ILJ)	0
+Lsun/misc/Unsafe;.putInt(VLJI)	0
+Lsun/misc/Unsafe;.putOrderedInt(VLJI)	0
+Lsun/misc/Unsafe;.getLong(JLJ)	0
+Lsun/misc/Unsafe;.putLong(VLJJ)	0
+Lsun/misc/Unsafe;.putOrderedLong(VLJJ)	0
+Lsun/misc/Unsafe;.getObject(LLJ)	0
+Lsun/misc/Unsafe;.putObject(VLJL)	0
+Lsun/misc/Unsafe;.allocateInstance(LL)	0
+#
+#End
+#
+#
+#libcore.icu.NativeCollation. They should be colocated by the native object address.
+#we are being unsound now.
+#
+#Llibcore/icu/NativeCollation;.closeCollator(VI)				1
+#Llibcore/icu/NativeCollation;.compare(IILL)				1
+#Llibcore/icu/NativeCollation;.getAttribute(III)				1
+#Llibcore/icu/NativeCollation;.getCollationElementIterator(IIL)				1
+#Llibcore/icu/NativeCollation;.getRules(LI)				1
+#Llibcore/icu/NativeCollation;.getSortKey(LIL)				1
+#Llibcore/icu/NativeCollation;.openCollator(IL)				1
+#Llibcore/icu/NativeCollation;.openCollatorFromRules(ILII)				1
+#Llibcore/icu/NativeCollation;.safeClone(II)				1
+#Llibcore/icu/NativeCollation;.setAttribute(VIII)				1
+#Llibcore/icu/NativeCollation;.closeElements(VI)				1
+#Llibcore/icu/NativeCollation;.getMaxExpansion(III)				1
+#Llibcore/icu/NativeCollation;.getOffset(II)				1
+#Llibcore/icu/NativeCollation;.next(II)				1
+#Llibcore/icu/NativeCollation;.previous(II)				1
+#Llibcore/icu/NativeCollation;.reset(VI)				1
+#Llibcore/icu/NativeCollation;.setOffset(VII)				1
+#Llibcore/icu/NativeCollation;.setText(VIL)				1
+Llibcore/icu/NativeCollation;.compare(IILL)				0
+#
+#End
+#
+Landroid/os/SystemClock;.elapsedRealtime(J)	0
