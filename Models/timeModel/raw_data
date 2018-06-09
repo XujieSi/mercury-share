@@ -1,0 +1,54 @@
+aviary(image processing) 60
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+5453-10045-3        5678485             619307              2223784             1197320             15                  
+5774-10045-2        5701777             622207              1683226             -                   15                  
+
+droidfish(chess game) 90
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+9221-10042-3        61701058            2902321             11319212            8272394             9                   
+9402-10042-2        62124314            2948896             9409209             -                   9                   
+
+french(language learning, didn't play audio as it's random) 120
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+11528-10046-3       8824169             855064              3616148             1726008             11                  
+11784-10046-2       8819450             854496              2952086             -                   11                  
+
+duolingo(language learning) 120
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+14502-10049-3       52654360            4500920             12895808            8809212             21                  
+14924-10049-2       54796720            4708782             9481321             -                   21                  
+
+calculator(come with android) 60
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+15568-10004-3       4271634             371951              2369292             1054006             3                   
+15994-10004-2       4317973             376921              1770233             -                   3                   
+
+zite(news) 120
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+4886-10052-3        9216990             1003856             11269499            2447197             13                  
+4468-10052-2        9307577             1010245             9714630             -                   13                  
+
+wikipedia 120               
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+6278-10053-3        7443188             732950              9697236             1869126             22                  
+5857-10053-2        7510131             742538              8897612             -                   22                  
+
+Subway Navigation 120
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+7731-10055-3        16543136            1655318             11638518            3839127             12                  
+7407-10055-2        17399760            1755139             10060423            -                   12                  
+
+heart(health) 180
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+10040-10056-3       48868392            5293056             25053801            14213233            15                  
+10455-10056-2       50649837            5541665             19439542            -                   15                  
+
+howtodraw 120
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+12486-10057-3       17926872            1751368             35849057            6615808             8                   
+12837-10057-2       18577933            1851249             31198488            -                   8                   
+
+heart(reassessed) 180
+pid-uid-feature     instruction counts  method counts       total time          java time           thread count        
+15415-10056-3       47256801            5082061             24313535            14114658            14                  
+15754-10056-2       50077959            5514278             18776855            -                   14                  

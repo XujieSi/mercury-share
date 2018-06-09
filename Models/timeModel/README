@@ -1,0 +1,16 @@
+How to gather the experiment data for time model (a. cpu cycles. b. dalvik instruction counts. c. method invocation counts):
+
+1. Choose the app you want, get the package id by checking /data/system/packagelist inside abd shell.
+2. Create a file with package id as the first line and '2' as the second line. Push it to /sdcard/
+3. Push printTime.sh into /data/
+4. Set up oprofile in adb shell using 
+	opcontrol --setup
+	opcontrol --event=CPU_CYCLES:<number> --separate-thread=1
+	opcontrol --start
+5. Start the app and check its process id as pid
+6. Play the app for a while
+7. When you want to stop, run printTime.sh inside adb shell:
+	printTime.sh <pid>
+8. Use adb logcat to get the dalvik instruction counts and method invocation counts.
+9. Use opimport_pull to pull out profiling data(cpu cycles:
+	opimport_pull -p <pid> -r <outputdir>

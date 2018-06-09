@@ -1,0 +1,5 @@
+wifilocal: offload to local cloud through wifi
+wifiremote: offload to remote cloud (amazon ec2) through wifi
+lte: 4g lte network
+
+The first column is the data size (bytes). The second column is the time (ms).

@@ -1,0 +1,1 @@
+The files under this folder are the files for the ILP solver inputs. The first line is the latency for all data. The following are the time needed for different data size WITHOUT latency. Compared with the raw data provided by Cong, the data of time is adjusted so that it is motonically increasing.
