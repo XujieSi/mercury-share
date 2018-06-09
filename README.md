@@ -12,7 +12,7 @@ Mercury: A Unified Framework for Exploring Offloading Tradeoffs in Mobile-Cloud 
 	- export `runnable jar` (a pre-built runnable jar is included in `bin`)
 3. (optional, used for debugging) build trace visualization tool: similar to the above
 
-## Run
+## Run Mercury
 
 ```bash
 # print help info
@@ -32,7 +32,7 @@ java -Xmx16g  -jar bin/mercury.jar \
 
 ```
 
-### command line parameters
+### Mercury command line parameters
 
 ```
  -c VAL            : Extended annotation for co-located native method.
