@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NetworkMeasure</string>
+    <string name="hello_world">Please first start JVM server at your laptop, then give your laptop IP: </string>
+    <string name="action_settings">Settings</string>
+
+</resources>

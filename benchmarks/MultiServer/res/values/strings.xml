@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">CirrusServer</string>
+    <string name="hello_world">Click Button to start Cirrus Server</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

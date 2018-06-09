@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.nm.MainActivity" >
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/serverIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/testAvailable"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:text="192.168.2.1" />
+<!-- 192.168.1.100 192.168.2.1 128.61.241.240  -->
+    <Button
+        android:id="@+id/testAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msg"
+        android:layout_below="@+id/serverIP"
+        android:layout_marginTop="33dp"
+        android:text="Test Server available or not" />
+
+    <Button
+        android:id="@+id/startMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/testAvailable"
+        android:layout_below="@+id/testAvailable"
+        android:layout_marginTop="34dp"
+        android:text="Start Measurement" />
+
+    <Button
+        android:id="@+id/getStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startMeasure"
+        android:layout_below="@+id/startMeasure"
+        android:layout_marginTop="28dp"
+        android:text="Get measure status" />
+
+</RelativeLayout>

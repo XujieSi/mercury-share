@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/OffloadingUtility"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/georegression-0.7.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-android-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-calibration-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-feature-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-io-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-geo-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-ip-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-recognition-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/BoofCV-sfm-0.18.jar"/>
+	<classpathentry kind="lib" path="libs/core-0.26.jar"/>
+	<classpathentry kind="lib" path="libs/ddogleg-0.6.jar"/>
+	<classpathentry kind="lib" path="libs/xstream-1.4.7.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

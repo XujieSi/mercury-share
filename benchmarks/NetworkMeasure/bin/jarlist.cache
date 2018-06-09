@@ -1,0 +1,11 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1437328868000 74282 867f8ee9ea511183c81174176ddfcf24fa8c1746 /Users/xujie/Projects/android_workspace/OffloadingUtility/lib/reflectasm-1.10.1-shaded.jar
+1442419715000 74282 867f8ee9ea511183c81174176ddfcf24fa8c1746 /Users/xujie/Projects/android_workspace/NetworkMeasure/libs/reflectasm-1.10.1-shaded.jar
+1442419710000 41755 87c0ea803b69252868d09308b4618f766f135a96 /Users/xujie/Projects/android_workspace/NetworkMeasure/libs/objenesis-2.1.jar
+1437328868000 41755 87c0ea803b69252868d09308b4618f766f135a96 /Users/xujie/Projects/android_workspace/OffloadingUtility/lib/objenesis-2.1.jar
+1442419693000 287589 f5e3a16f4f2651893b5e1e11475eb27bb770e095 /Users/xujie/Projects/android_workspace/NetworkMeasure/libs/kryo-3.0.1.jar
+1437328868000 287589 f5e3a16f4f2651893b5e1e11475eb27bb770e095 /Users/xujie/Projects/android_workspace/OffloadingUtility/lib/kryo-3.0.1.jar
+1442419705000 5711 ff07b5f1b01d2f92bb00a337f9a94873712f0827 /Users/xujie/Projects/android_workspace/NetworkMeasure/libs/minlog-1.3.0.jar
+1437328868000 5711 ff07b5f1b01d2f92bb00a337f9a94873712f0827 /Users/xujie/Projects/android_workspace/OffloadingUtility/lib/minlog-1.3.0.jar

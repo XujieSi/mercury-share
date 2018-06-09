@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PowerMeasure</string>
+    <string name="hello_world">Please input packat size (1KB default), and check Upload/Download(default), then push start button</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
