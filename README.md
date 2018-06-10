@@ -1,20 +1,20 @@
 # Mercury
 
-Mercury: A Unified Framework for Exploring Offloading Tradeoffs in Mobile-Cloud Computing
+A Unified Framework for Exploring Offloading Tradeoffs in Mobile-Cloud Computing
 
 
 ## Setup (tested on Linux)
 
 1. enter `profiling` and set up the profiling framework according to README.
 2. build min-cut solver: `cd solver/pseudo_max; make`
-2. build Mercury partition framework: 
+2. build Mercury partitioning framework: 
 	- open `partition` project use eclipse 
 	- export `runnable jar` (a pre-built runnable jar is included in `bin`)
 3. (optional, only used for debugging) build trace visualization tool: 
 	- similar to the above
 	- a pre-built jar is also included in `bin`
 
-## Run Mercury
+## Running Mercury
 
 ```bash
 # print help info
